@@ -1,4 +1,6 @@
-﻿namespace Examen_Mvvm
+﻿using Examen_Mvvm.Views;
+
+namespace Examen_Mvvm
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }
